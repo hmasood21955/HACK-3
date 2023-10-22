@@ -2,14 +2,17 @@
 #include<math.h>
 int main()
 {
-    float plan_gb = 30;
+    float plan_gb = 0;
     int current_day = 0;
     float total_used_gb =0 ;
     printf("enter the current day:");
     scanf("%d",&current_day);
     
-    printf("enter the plan gb:");
+    printf("enter the toatl gb used:");
     scanf("%f",& total_used_gb);
+
+    printf("enetr plan gb used:");
+    scanf("%f",&plan_gb); 
     
     int days_remaining = 30 - current_day + 1;
     double avg_daily_usage = total_used_gb / current_day;
